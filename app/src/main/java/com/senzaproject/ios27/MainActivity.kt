@@ -166,7 +166,7 @@ class MainActivity : Activity() {
         }
         if (filtered.isEmpty()) {
             val empty = text("No apps found", 14f, Color.WHITE).apply { setPadding(dp(8), dp(16), 0, dp(16)) }
-            grid.addView(empty, GridLayout.LayoutParams().apply { width = -1; height = -2; columnSpec = GridLayout.spec(0, 4) })
+            grid.addView(empty, GridLayout.LayoutParams().apply { this.width = -1; this.height = -2; columnSpec = GridLayout.spec(0, 4) })
         }
     }
 
