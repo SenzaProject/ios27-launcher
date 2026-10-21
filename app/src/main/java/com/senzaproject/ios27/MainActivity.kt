@@ -88,7 +88,7 @@ class MainActivity : Activity() {
             setTextColor(Color.WHITE)
             setHintTextColor(Color.rgb(218, 224, 255))
             setPadding(dp(16), 0, dp(16), 0)
-            background = rounded(0x35FFFFFF, 28)
+            this.background = rounded(0x35FFFFFF, 28)
             imeOptions = EditorInfo.IME_ACTION_SEARCH
         }
         content.addView(search, LinearLayout.LayoutParams(-1, dp(48)).apply { bottomMargin = dp(22) })
@@ -148,7 +148,7 @@ class MainActivity : Activity() {
             val icon = ImageView(this).apply {
                 setImageDrawable(app.icon)
                 scaleType = ImageView.ScaleType.FIT_CENTER
-                background = rounded(0x20FFFFFF, 18)
+                this.background = rounded(0x20FFFFFF, 18)
                 setPadding(dp(9), dp(9), dp(9), dp(9))
             }
             item.addView(icon, LinearLayout.LayoutParams(dp(54), dp(54)))
@@ -159,7 +159,7 @@ class MainActivity : Activity() {
                 setPadding(0, dp(6), 0, 0)
             }, LinearLayout.LayoutParams(-1, dp(32)))
             val params = GridLayout.LayoutParams().apply {
-                width = width
+                this.width = width
                 height = dp(100)
             }
             grid.addView(item, params)
